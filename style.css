@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    --transforms: ;
+    --move-amount: -10px;
+}
+
+nav {
+    display: flex;
+    background-image: url("images/camo_background.png");
+    background-size: cover;
+    color: #EAEAEA;
+    padding: 0.5em 1.5em;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+}
+
+.fade-in {
+    animation: fade-in ease 1s both;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+}
+
+.brand-name {
+    margin: 0;
+    display: inline-block;
+    font-family: 'Squada One';
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.nav-item.left {
+    font-family: 'Overpass';
+    font-size: 1em;
+    color: #f0f0f0;
+}
+
+.brand-name span {
+    color: #C3B091;
+}
+
+.main-background {
+    position: relative;
+    margin: 0;
+    background-image: url("images/squat.jpg");
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-position-x: 30%;
+    padding-top: 1em;
+    min-height: 300px;
+}
+
+main {
+    width: 80%;
+    height: calc(100% - 3em);
+    display: flex;
+    border: 1px solid #6B4423;
+    background-color: rgba(195, 176, 145, 0.51);
+    margin: auto;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+main h1 {
+    width: 80%;
+    margin: auto;
+    color: #6B4423;
+    font-family: 'Black Ops One';
+    font-weight: 400;
+    font-size: 2em;
+}
+
+main h5 {
+    font-size: 1em;
+    font-family: 'Overpass';
+    font-weight: 700;
+    margin: 0;
+    margin-top: 0.25em;
+}
+
+button {
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Overpass';
+    font-size: 1.2em;
+    margin: 0.25em 0;
+}
+
+.brown-btn {
+    background: #6B4423;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.white-btn.fade-in {
+    animation: fade-in 1s 1s both;
+}
+
+.white-btn {
+    background: white;
+    color: #6B4423;
+    font-weight: 400;
+    border: 2px solid #6B4423;
+}
+
+.to-line {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.client-reviews {
+    display: flex;
+    background-image: url("images/camo_background.png");
+    background-size: cover;
+    background-position-y: 20%;
+    height: 8vh;
+    padding: 2em;
+    text-align: center;
+    font-family: 'Overpass';
+    color: #EAEAEA;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-reviews q {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.reviewer-name {
+    color: #ACA08D;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+}
+
+.arrow {
+    width: 1em;
+    height: 1em;
+    background-image: url("icons/right-arrow.svg");
+    background-size: contain;
+}
+
+.arrow.left {
+    transform: rotate(180deg);
+    --transforms: rotate(180deg);
+    --move-amount: 10px;
+}
+
+.team-section {
+    background-color: #ECECEC;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-family: 'Black Ops One';
+    font-weight: 400;
+    color: #6B4423;
+}
+
+.card {
+    position: relative;
+    border-radius: 7px;
+    border: 1.5px solid #6B4423;
+    width: 200px;
+    margin: auto;
+    font-family: 'Overpass';
+    background: #ECECEC;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.05);
+    max-width: 200px;
+}
+
+.card-photo {
+    width: 100%;
+    height: auto;
+    border-bottom: 1.5px solid #6B4423;
+}
+
+.card-title {
+    margin: 0;
+    margin-top: -6px;
+    padding: 0.5em;
+    font-weight: 700;
+    color:  #6B4423;
+}
+
+.card-title.small {
+    font-size: 1em;
+}
+
+.card-description {
+    position: relative;
+    font-size: 0.7em;
+    color: #707070;
+    padding: 0 0.5em;
+    margin-top: 0;
+}
+
+.team-section .card {
+    margin: auto;
+}
+
+.team-section .card-title {
+    font-family: 'Squada One';
+    font-weight: 400;
+}
+
+.team-section p {
+    font-family: 'Overpass';
+    font-size: 0.9em;
+    color: #565656;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+section {
+    text-align: center;
+    padding: 1em;
+    background: #ECECEC;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container .card {
+    height: 200px;
+}
+
+.card-container .card-photo {
+    height: 100px;
+    background-size: cover;
+}
+
+.activities {
+    padding: 0;
+}
+
+.activities .section-title {
+    color: #C3B091;
+    background-image: url('images/camo_background.png');
+    background-position-y: 10%;
+    background-size: cover;
+    padding: 0.75em;
+}
+
+.activities .card {
+    background: #fff;
+    margin-bottom: 1em;
+}
+
+.container-section {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('images/camo_background.png');
+    background-size: cover;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    font-family: 'Overpass';
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.credits {
+    text-align: center;
+    padding: 0.5em;
+    color: #565656;
+    font-family: 'Overpass';
+    font-size: 0.8em;
+}
+
+p b {
+    font-size: 1.1em;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: var(--transforms) translateY(var(--move-amount));
+    }
+    50% {
+        transform: var(--transforms) translateY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-scroll {
+    opacity: 0;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    body {
+        width: 50vw;
+        margin: auto;
+        max-width: 800px;
+        border: 1px solid #6B4423;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    html {
+        background-color: #ddd;
+    }
+}
